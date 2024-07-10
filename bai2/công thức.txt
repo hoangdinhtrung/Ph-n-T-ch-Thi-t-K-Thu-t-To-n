@@ -1,0 +1,27 @@
+Mô tả chi tiết thuật toán:
+
+Bước 1: Sắp xếp các mặt hàng theo thứ tự của tỉ lệ giá trị/trọng lượng (tỷ lệ lợi nhuận).
+Bước 2: Bắt đầu từ mặt hàng có tỷ lệ lợi nhuận cao nhất, lấy càng nhiều càng tốt, cho đến khi không còn chỗ trống trong túi hoặc hết mặt hàng đó.
+Bước 3: Tiếp tục với mặt hàng có tỷ lệ lợi nhuận cao thứ hai và lặp lại bước 2.
+Bước 4: Thoát khỏi thuật toán nếu đã đầy túi hoặc hết mặt hàng.
+
+Phương pháp thiết kế thuật toán trong thuật toán tham lam:
+
+Bước 1: Xác định các bước cơ bản của thuật toán, bao gồm sắp xếp và lựa chọn các mặt hàng.
+Bước 2: Xác định hàm mục tiêu và tiêu chuẩn tối ưu đối với bài toán (trong trường hợp này, là tối đa lợi nhuận).
+Bước 3: Sử dụng các công cụ và phương pháp toán học để tối ưu hàm mục tiêu đối với các ràng buộc và/hoặc 
+giới hạn của bài toán (trong trường hợp này, là sức chứa của túi).
+Bước 4: Thực hiện thuật toán, kiểm tra và điều chỉnh nếu cần thiết để đạt được kết quả tối ưu
+
+Thực hiện bài toán với 1 bộ dữ liệu cụ thể bằng thuật toán đã xây dựng: 
+
+Nếu sức chứa của túi là 20, và trọng lượng và giá trị của mặt hàng A, B và C lần lượt là 18 và 25, 15 và 24, 10 và 25. 
+Theo thuật toán tham lam, mặt hàng sẽ được chọn theo thứ tự C , B sau đó sẽ không chọn mặt hàng A do vượt quá sức chứa của túi. 
+Kết quả là giá trị tối đa trong túi là 49.
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Trong trường hợp tổng số lượng mặt hàng là n, 
+thời gian thực hiện của thuật toán tham lam là O(n*log(n)), do phải sắp xếp các mặt hàng theo tỷ lệ giá trị/trọng lượng giảm dần trước 
+khi áp dụng thuật toán. Do đó, với bộ dữ liệu nhỏ như trên, thuật toán có thể được thực hiện nhanh chóng và hiệu quả. 
+Tuy nhiên, với số lượng mặt hàng lớn, thuật toán này sẽ lâu hơn các thuật toán động lực hoặc chia để trị

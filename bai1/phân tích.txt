@@ -1,0 +1,14 @@
+Mô tả chi tiết thuật toán :
+Bước 1: Khởi tạo biến đếm số đồng xu count= 0 và số tiền cần đổi là n. 
+Bước 2: Lấy số tiền cần đổi chia cho 5000 ra phần nguyên là số lượng của xu 5000 thêm vào count .
+Bước 3: Phần dư là số tiền còn lại tiếp tục chia cho 2000 lặp lại như bước 2 , 
+tương tự nhưvậy với các đồng xu khác (1000,500)
+Bước 4: Kết thúc thuật toán, trả về số đồng ít nhất cần đổi là tổng của bộ đếm count
+
+2.Phương pháp thiết kế thuật toán tham lam là lựa chọn giá trị kết quả tốt nhất tại từngbước để đạt được kết quả tối ưu toàn cục.
+
+4.Ví dụ : nếu nhập số tiền cần đổi là 17500 thì số đồng xu ít nhất cần đổi là 5
+
+5. Thời gian thực hiện của thuật toán này sẽ rất nhanh vì nó chỉ có vòng lặp duy nhất với số lần lặp là hằng số (4). 
+Vòng lặp sẽ lặp lại tối đa 4 lần bởi vì mảng "coin" chỉ có 4 phần tử. 
+Vì vậy, độ phức tạp của thuật toán này là O(1), tức là không phụ thuộc vào đầu vào n.

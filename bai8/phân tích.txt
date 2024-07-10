@@ -1,0 +1,39 @@
+Mô tả chi tiết thuật toán:
+
+1.Phương pháp chia để trị:
+Đầu vào: Số nguyên dương n.
+Đầu ra: Giá trị của n! (n giai thừa).
+Nếu n = 0 hoặc n = 1, trả về 1.
+Nếu n > 1, chia bài toán thành 2 phần:
+Tính n/2! bằng cách gọi đệ quy thuật toán.
+Tính (n/2 + 1) * (n/2 + 2) * ... * n.
+
+2.Phương pháp quy hoạch động:
+
+Sử dụng một mảng dp để lưu trữ các giá trị đã tính toán.
+Khởi tạo dp[0] = 1.
+Duyệt từ i = 1 đến n, tính dp[i] = dp[i-1] * i.
+Kết quả n! là dp[n]
+
+Phương pháp thiết kế thuật toán:
+
+1.Phương pháp chia để trị: 
+Chia bài toán thành các bài toán con nhỏ hơn, giải quyết chúng đệ quy.
+Kết hợp kết quả của các bài toán con để tạo ra kết quả cuối cùng.
+2.Phương pháp quy hoạch động: 
+Tính toán và lưu trữ các giá trị con để sử dụng lại trong quá trình tính toán
+
+Thực hiện bài toán với 1 bộ dữ liệu cụ thể bằng thuật toán đã xây dựng: 
+
+Ví dụ, nếu nhập n = 5, chương trình sẽ tính và in ra kết quả 5! = 120.
+
+Đánh giá thời gian thực hiện của thuật toán:
+Thuật toán tính giai thừa bằng phương pháp quy hoạch động có độ phức tạp thời gian O(n).
+Với n là số nguyên dương, thời gian thực hiện của thuật toán sẽ tăng tuyến tính theo n
+
+Thực hiện bài toán với 1 bộ dữ liệu cụ thể bằng thuật toán đã xây dựng:
+Ví dụ: n = 5
+Kết quả: 5! = 120
+
+Đánh giá thời gian thực hiện của thuật toán:
+Thời gian thực hiện của thuật toán chia để trị tính n! là O(n), với n là số nguyên dương đầu vào

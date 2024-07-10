@@ -1,0 +1,21 @@
+Mô tả chi tiết thuật toán QuickSort theo phương pháp chia để trị:
+
+Chọn một phần tử trong dãy làm phần tử chốt (pivot).
+Chia dãy thành hai phần, một phần chứa các phần tử nhỏ hơn hoặc bằng pivot và một phần chứa các phần tử lớn hơn pivot.
+Đệ quy sắp xếp các phần tử nhỏ hơn hoặc bằng pivot và các phần tử lớn hơn pivot.
+Kết hợp các phần tử đã sắp xếp để tạo ra dãy kết quả.
+
+Phương pháp thiết kế thuật toán QuickSort:Chia để trị: 
+
+Thuật toán QuickSort sử dụng phương pháp chia để trị bằng cách chọn một phần tử chốt và chia dãy thành hai phần, 
+sau đó đệ quy sắp xếp các phần tử nhỏ hơn hoặc bằng pivot và các phần tử lớn hơn pivot
+
+Thực hiện bài toán với 1 bộ dữ liệu cụ thể bằng thuật toán đã xây dựng:
+
+sắp xếp dãy số {10, 7, 8, 9, 1, 5} 
+kết quả in ra là  {1,5,7,8,9,10}
+
+Đánh giá thời gian thực hiện của thuật toán QuickSort 
+
+phụ thuộc vào kích thước của dãy số và cách chọn pivot. Trong trường hợp tốt nhất, thời gian thực hiện là O(n log n), 
+trong trường hợp xấu nhất là O(n^2), và trung bình là O(n log n)

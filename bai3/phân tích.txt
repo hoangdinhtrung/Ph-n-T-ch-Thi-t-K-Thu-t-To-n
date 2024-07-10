@@ -1,0 +1,33 @@
+Mô tả chi tiết thuật toán:
+
+Bước 1 : Sắp xếp các hoạt động theo thời gian kết thúc tăng dần.
+Bước 2 : Chọn hoạt động đầu tiên và đánh dấu là hoạt động được chọn.
+Bước3 : Duyệt qua các hoạt động còn lại, nếu thời điểm bắt đầu hoạt động đó lớn hơn thờiđiểm kết thúc của hoạt động được chọn trước đó, 
+thì chọn hoạt động đó và đánh dấu là hoạt động được chọn.
+Bước 4 : Lặp lại bước trên cho đến khi duyệt qua tất cả các hoạt động.
+
+Phương pháp thiết kế thuật toán:
+
+Sắp xếp các hoạt động theo thời gian kết thúc tăng dần để tối ưu việc chọn hoạt động.
+Sử dụng một biến đếm để đánh dấu số lượng hoạt động được chọn.
+Sử dụng vòng lặp để duyệt qua các hoạt động còn lại và kiểm tra điều kiện để chọn hoạt động
+
+Thực hiện bài toán với bộ dữ liệu cụ thể bằng thuật toán đã xây dựng:
+
+Bộ dữ liệu:
+Hoạt động 1: Thời điểm bắt đầu: 1, Thời điểm kết thúc: 3
+Hoạt động 2: Thời điểm bắt đầu: 3, Thời điểm kết thúc: 4
+Hoạt động 3: Thời điểm bắt đầu: 4, Thời điểm kết thúc: 6
+Hoạt động 4: Thời điểm bắt đầu: 2, Thời điểm kết thúc: 8
+Hoạt động 5: Thời điểm bắt đầu: 6, Thời điểm kết thúc: 10
+Hoạt động 6: Thời điểm bắt đầu: 4, Thời điểm kết thúc: 13
+Hoạt động 7: Thời điểm bắt đầu: 10, Thời điểm kết thúc: 14
+Hoạt động 8: Thời điểm bắt đầu: 12, Thời điểm kết thúc: 15
+Hoạt động 9: Thời điểm bắt đầu: 11, Thời điểm kết thúc: 16
+Kết quả:Các hoạt động được chọn: 1, 3 ,7 
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Thời gian thực hiện của thuật toán tham lam này là O(nlogn), với n là số lượng hoạt động.Việc sắp xếp danh sách hoạt động theo 
+thời gian kết thúc tốn O(nlogn), 
+và việc duyệt qua danh sách hoạt động còn lại tốn O(n)

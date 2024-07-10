@@ -1,0 +1,29 @@
+Mô tả chi tiết thuật toán:
+
+Bước 1: Khởi tạo một mảng 2 chiều dp có kích thước (n+1) x (w+1), trong đó dp[i][j] sẽ lưu giá trị lớn nhất có thể đạt được 
+khi chỉ xét i đồ vật đầu tiên và có khối lượng tối đa là j.
+Bước 2: Đặt giá trị ban đầu cho dp[i][0] và dp[0][j] là 0 với mọi i và j.
+Bước 3: Dùng vòng lặp để duyệt qua từng đồ vật từ 1 đến n:
+Nếu khối lượng của đồ vật i (ai) nhỏ hơn hoặc bằng khối lượng tối đa j, ta so sánh giá trị của việc chọn đồ vật i và không chọn đồ vật i:
+Nếu giá trị của việc chọn đồ vật i (ci + dp[i-1][j-ai]) lớn hơn giá trị của việc 
+không chọn đồ vật i (dp[i-1][j]), ta gán dp[i][j] = ci + dp[i-1][j-ai].
+Ngược lại, ta gán dp[i][j] = dp[i-1][j].
+Nếu khối lượng của đồ vật i (ai) lớn hơn khối lượng tối đa j, ta gán dp[i][j] = dp[i-1][j].
+Bước 4: Giá trị lớn nhất có thể đạt được sẽ nằm ở dp[n][w]
+
+Phương pháp thiết kế thuật toán:
+
+Thuật toán sử dụng phương pháp quy hoạch động để giải quyết bài toán cái túi.
+Sử dụng một mảng 2 chiều dp để lưu trữ giá trị lớn nhất có thể đạt được tại mỗi bước.
+Dùng vòng lặp để duyệt qua từng đồ vật và tính toán giá trị lớn nhất có thể đạt được khi xét đến đồ vật đó
+
+Thực hiện bài toán với bộ dữ liệu cụ thể:
+Ví dụ trên sử dụng 5 đồ vật với khối lượng tương ứng là 2, 3, 5, 7,1 và giá trị tương ứng là10, 5, 15, 7,6
+Khối lượng tối đa của túi là 10.
+Kết quả sẽ là giá trị lớn nhất có thể đạt được khi sắp xếp các đồ vật vào túi là 31
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Thời gian thực hiện của thuật toán cái túi theo phương pháp quy hoạch động là O(nw), 
+trong đó n là số lượng đồ vật và w là khối lượng tối đa của túi.
+Với bộ dữ liệu cụ thể, thời gian thực hiện của thuật toán sẽ phụ thuộc vào số lượng đồ vật và khối lượng tối đa của túi

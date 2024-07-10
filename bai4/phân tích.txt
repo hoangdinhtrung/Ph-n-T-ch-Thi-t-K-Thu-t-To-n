@@ -1,0 +1,20 @@
+Mô tả chi tiết thuật toán:
+
+Bước 1: Chia dãy con thành hai phần bằng cách tìm chỉ số giữa (mid).
+Bước 2: Đệ quy tìm dãy con liên tiếp có tổng lớn nhất trong phần đầu tiên (từ đầu đến mid) và phần thứ hai (từ mid+1 đến cuối).
+Bước 3: Tìm dãy con liên tiếp có tổng lớn nhất chứa phần tử ở vị trí mid.
+Bước 4: So sánh và trả về dãy con liên tiếp có tổng lớn nhất trong 3 trường hợp trên.
+
+Phương pháp thiết kế thuật toán:
+
+Sử dụng phương pháp chia để trị để giải quyết bài toán tìm dãy con liên tiếp có tổng lớn nhất.Chia dãy con thành các phần nhỏ hơn, 
+giải quyết từng phần nhỏ bằng cách đệ quy, sau đó kết hợp các kết quả để tìm ra kết quả cuối cùng
+
+Thực hiện bài toán với 1 bộ dữ liệu cụ thể bằng thuật toán đã xây dựng:
+Ví dụ: Dãy số {-2, -5, 6, -2, -3, 1, 5, -6}
+Kết quả: Dãy con liên tiếp có tổng lớn nhất là {6, -2, -3, 1, 5} với tổng là 7.
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Thời gian thực hiện của thuật toán chia để trị trong trường hợp tốt nhất là O(nlogn), trong trường hợp xấu nhất là O(n^2), 
+với n là số phần tử trong dãy

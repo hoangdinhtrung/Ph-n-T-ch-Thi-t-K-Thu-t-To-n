@@ -1,0 +1,25 @@
+Mô tả chi tiết thuật toán:
+
+Bước 1: Sắp xếp các đồ vật theo tỷ lệ giá trị trên khối lượng (ci/ai) giảm dần.
+Bước 2: Khởi tạo giá trị tối đa của túi (max_value) và khối lượng hiện tại của túi (current_weight) bằng 0.
+Bước 3: Duyệt qua từng đồ vật theo thứ tự đã sắp xếp:
+Nếu khối lượng hiện tại của túi cộng với khối lượng đồ vật hiện tại nhỏ hơn hoặc bằng khối lượng tối đa của túi (w), 
+thì thêm đồ vật vào túi và cập nhật giá trị tối đa của túi và khối lượng hiện tại của túi.
+Ngược lại, bỏ qua đồ vật này và chuyển sang đồ vật tiếp theo.
+Bước 4: Trả về giá trị tối đa của túi.
+
+Phương pháp thiết kế thuật toán:
+
+Thuật toán sử dụng phương pháp tham lam (greedy) bằng cách sắp xếp các đồ vật theo tỷ lệ giá trị trên khối lượng giảm dần. 
+Điều này đảm bảo rằng các đồ vật có giá trị lớn hơn sẽ được xếp vào túi trước, tối ưu hóa giá trị của túi
+
+Thực hiện bài toán với bộ dữ liệu cụ thể:
+
+Đầu vào: Khối lượng tối đa của túi (w) là 10 và danh sách các đồ vật với khối lượng và 
+giá trị tương ứng là {{2, 10}, {3, 5}, {5, 15}, {7, 7}, {1, 6}}.
+Đầu ra: Giá trị lớn nhất của túi là 31.
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Thời gian thực hiện của thuật toán phụ thuộc vào số lượng đồ vật (n) và khối lượng tối đa của túi (w). 
+Trong trường hợp xấu nhất, thuật toán có độ phức tạp O(nlogn) do việc sắp xếp các đồ vật

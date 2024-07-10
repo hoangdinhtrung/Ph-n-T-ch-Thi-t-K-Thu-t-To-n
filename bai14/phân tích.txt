@@ -1,0 +1,31 @@
+Mô tả chi tiết thuật toán:
+
+Bước 1: Khởi tạo bàn cờ với kích thước n x n và tất cả các ô đều chưa được đi qua.
+Bước 2: Đặt quân mã vào ô đầu tiên có tọa độ (x0, y0).
+Bước 3: Gọi hàm quay lui để tìm lộ trình đi của quân mã.
+Bước 4: Trong hàm quay lui, kiểm tra xem quân mã có thể di chuyển đến một ô mới hay không. 
+Nếu có, đánh dấu ô đó là đã đi qua và di chuyển quân mã đến ô đó. Sau đó, gọi đệ quy để tiếp tục tìm lộ trình đi của quân mã.
+Bước 5: Nếu đã đi qua tất cả các ô trên bàn cờ, in ra lộ trình đi của quân mã.
+Bước 6: Quay lui bằng cách đánh dấu ô hiện tại là chưa đi qua và trở về ô trước đó để thử các lựa chọn khác.
+
+Phương pháp thiết kế thuật toán:
+
+Sử dụng phương pháp quay lui để thử tất cả các khả năng di chuyển của quân mã trên bàn cờ.
+Sử dụng đệ quy để thực hiện việc tìm kiếm lộ trình đi của quân mã.
+Sử dụng mảng 2 chiều để lưu trạng thái của bàn cờ và đánh dấu các ô đã đi qua
+
+Thực hiện bài toán với bộ dữ liệu cụ thể:
+Ví dụ: Bàn cờ 5x5, quân mã bắt đầu từ ô (0, 0).
+Kết quả:
+1       20      17      12      3
+16      11      2       7       18
+21      24      19      4       13
+10      15      6       23      8
+25      22      9       14      5
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Thời gian thực hiện của thuật toán sẽ phụ thuộc vào kích thước của bàn cờ và vị trí ban đầu của quân mã.
+Trong trường hợp tổng quát, thuật toán quay lui sẽ có độ phức tạp thời gian là O(8^(n^2)), với n là kích thước của bàn cờ.
+Tuy nhiên, thời gian thực hiện có thể được cải thiện bằng cách sử dụng các 
+phương pháp tối ưu hơn như Heuristic hoặc Backtracking thông minh

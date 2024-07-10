@@ -1,0 +1,22 @@
+Mô tả chi tiết thuật toán:
+
+Bước 1: Đặt 5 con hậu đầu tiên lên bàn cờ 8x8, mỗi con hậu nằm trên một hàng khác nhau.
+Bước 2: Đặt con hậu thứ 6 lên bàn cờ, kiểm tra xem nó có tấn công các con hậu trước đó không. 
+Nếu không, tiến hành đặt con hậu thứ 7 và kiểm tra lại.
+Bước 3: Đặt con hậu thứ 8 lên bàn cờ, kiểm tra xem nó có tấn công các con hậu trước đó không. 
+Nếu không, ta đã tìm được một cách xếp hậu thỏa mãn yêu cầu.
+
+Phương pháp thiết kế thuật toán:
+
+Sử dụng phương pháp quay lui để thử tất cả các khả năng xếp hậu trên bàn cờ.
+Sử dụng một mảng 1 chiều để lưu vị trí của các con hậu trên bàn cờ.
+Sử dụng đệ quy để thử từng vị trí của con hậu thứ 6, 7 và 8
+
+Thực hiện bài toán với 1 bộ dữ liệu cụ thể:
+Bộ dữ liệu mặc định là xếp 8 con hậu đầu tiên trên bàn cờ 8x8.
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Thời gian thực hiện của thuật toán sẽ phụ thuộc vào cách xếp hậu và số lượng cách xếp hậu hợp lệ. 
+Trong trường hợp xấu nhất, thuật toán sẽ thử tất cả các khả năng xếp hậu trên bàn cờ, có độ phức tạp là O(8!).
+Tuy nhiên, do kích thước bàn cờ nhỏ (8x8), thuật toán sẽ thực hiện nhanh chóng và khônggây trễ hệ thống

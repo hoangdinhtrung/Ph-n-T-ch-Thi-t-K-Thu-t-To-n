@@ -1,0 +1,23 @@
+Mô tả chi tiết thuật toán:
+
+Để giải bài toán này, chúng ta có thể sử dụng phương pháp quy hoạch động.
+1. Khởi tạo một mảng dp có kích thước 100 và giá trị ban đầu của tất cả các phần tử đều là 0.
+2. Gán dp[0] = 1, đại diện cho trường hợp phân tích số 0.
+3. Duyệt qua các số từ 1 đến n:
+-Với mỗi số i, duyệt qua các số từ i đến n:
+Cộng dp[j] với dp[j-i], đại diện cho cách phân tích số j bằng cách thêm số i vào.
+4. Kết quả cuối cùng sẽ là dp[n].Phương pháp thiết kế thuật toán:
+sử dụng phương pháp quy hoạch động
+Sử dụng mảng dp để lưu số cách phân tích cho các số từ 0 đến n.
+Duyệt qua từng số và tính số cách phân tích bằng cách cộng dồn số cách phân tích của các số nhỏ hơn.
+
+Thực hiện bài toán với bộ dữ liệu cụ thể:
+
+Giả sử n = 5.
+Kết quả sẽ là số cách phân tích số 5, tức là dp[5].
+Chạy chương trình trên và nhập n = 5, kết quả sẽ là 7.
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Độ phức tạp thời gian của thuật toán này là O(n^2), với n là số tự nhiên đầu vào.Với n < 100, 
+thuật toán sẽ thực hiện nhanh chóng và hiệu quả

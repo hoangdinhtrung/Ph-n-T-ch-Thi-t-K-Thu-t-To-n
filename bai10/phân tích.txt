@@ -1,0 +1,21 @@
+Mô tả chi tiết thuật toán:
+
+chia dãy số ban đầu thành các nửa dãy con, sau đó tiếp tục chia đến khi chỉ còn một phần tử.
+Sau đó, ta trộn các phần tử đã chia nhỏ lại thành dãy con đã sắp xếp.
+Quá trình trộn được thực hiện bằng cách so sánh các phần tử của hai dãy con và đặt chúng vào dãy kết quả theo thứ tự tăng dần.
+
+Phương pháp thiết kế thuật toán:
+
+Bước 1: Chia dãy số ban đầu thành hai nửa dãy con.
+Bước 2: Đệ quy sắp xếp từng nửa dãy con.
+Bước 3: Trộn hai nửa dãy con đã sắp xếp thành dãy con đã sắp xếp
+
+Kết quả chạy chương trình với bộ dữ liệu cụ thể: {12, 11, 13, 5, 6, 7}
+
+Dãy số ban đầu: 12 11 13 5 6 7
+Dãy số đã sắp xếp: 5 6 7 11 12 13
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Độ phức tạp thời gian của thuật toán MergeSort là O(n log n), trong đó n là số phầntử của dãy số.
+Với bộ dữ liệu cụ thể trên, thời gian thực hiện của thuật toán MergeSort là tương đối nhanh và hiệu quả

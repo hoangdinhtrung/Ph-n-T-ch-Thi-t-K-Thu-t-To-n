@@ -1,0 +1,24 @@
+Mô tả chi tiết thuật toán:
+
+Bước 1: Khởi tạo một mảng visited với kích thước bằng số phần tử của dãy ban đầu, 
+ban đầu tất cả các phần tử đều chưa được thăm (visited[i] = false).
+Bước 2: Gọi hàm backtracking(0, M) để tìm các dãy con có tổng bằng M, bắt đầu từ phần tử đầu tiên của dãy (a[0]).
+Bước 3: Trong hàm backtracking, ta sẽ thử tất cả các khả năng chọn hoặc không chọn mỗiphần tử của dãy. 
+Nếu tổng các phần tử đã chọn bằng M, ta in ra dãy con tìm được. Nếu tổng chưa bằng M, ta tiếp tục thử các phần tử tiếp theo.
+Bước 4: Khi đã thử hết tất cả các phần tử, ta kết thúc hàm backtracking.
+
+Phương pháp thiết kế thuật toán:
+
+Sử dụng phương pháp quay lui (backtracking) để thử tất cả các khả năng chọn hoặc không chọn mỗi phần tử của dãy.
+Sử dụng một mảng visited để đánh dấu các phần tử đã được chọn
+
+Thực hiện bài toán với bộ dữ liệu cụ thể:
+
+Input: Dãy số (7, 1, 4, 3, 5, 6), M = 11
+Output: Các dãy con có tổng bằng 11: (7, 1, 3), (7, 4), (1, 4, 6), (5, 6)
+
+Đánh giá thời gian thực hiện của thuật toán:
+
+Thời gian thực hiện của thuật toán sẽ phụ thuộc vào kích thước của dãy số và giá trị của M. 
+Trong trường hợp xấu nhất, khi không có dãy con nào có tổng bằng M, thời gian thực hiện sẽ là O(2^n), với n là số phần tử của dãy. 
+Tuy nhiên, trong trường hợp tốt nhất, khi tìm thấy một dãy con có tổng bằng M, thời gian thực hiện sẽ là O(n)
